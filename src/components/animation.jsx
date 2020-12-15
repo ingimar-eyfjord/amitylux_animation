@@ -9,6 +9,7 @@ class LogoAnimated extends Component {
 
     }
     componentDidMount() {
+
         const animation = lottie.loadAnimation({
             container: this.container.current,
             renderer: "svg",
@@ -16,7 +17,8 @@ class LogoAnimated extends Component {
             autoplay: false,
             animationData: animationData,
         });
-
+        
+        document.querySelector("svg").setAttribute("viewBox", "500 150 900 300");
         animation.play();
         animation.addEventListener("complete", () => {
             setTimeout(() => {

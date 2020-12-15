@@ -1,9 +1,9 @@
-*{padding: 0;
-margin: 0;}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-.App{
+.logo {
   width: 100vw;
-  height: 100vh;
-  background-image: url('./components/img/landing_page_hero_image.jpg');
-  background-size: cover;
 }
